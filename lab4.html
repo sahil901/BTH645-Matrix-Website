@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <style>
+      a.a {
+        font-size: 25px;
+      }
+      </style> 
+    <div class="navbar-header">
+      <a class="a"; href= "home.html" s="navbar-brand" routerLink="home" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Home</a>
+       &nbsp; &nbsp; &nbsp;
+       <a class="a"; href= "lab2.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 2</a>
+       &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "lab3.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 3</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "lab4.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 4</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "lab5.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 5</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "assignment1.html" s="navbar-brand" routerLink="assignments" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Assignment 1</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "assignment2.html" s="navbar-brand" routerLink="assignments" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Assignment 2</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "assignment3.html" s="navbar-brand" routerLink="assignments" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Assignment 3</a>
+      &nbsp; &nbsp; &nbsp;
+    </div>
+  </div>
+</nav>
+<html lang="en">
+<head>
+  <title>Lab 4</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body> 
+  <div class="container">
+    <style>
+      p.a {
+        font-size: 40px;
+      }
+      </style>
+        <style>
+          p.b {
+            font-size: 25px;
+          }
+          </style>
+          <style>
+            li.c {
+              font-size: 20px;
+            }
+            </style>
+            <style>
+              dd.d {
+                font-size: 20px;
+              }
+              </style>
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video style="border:1px solid black" id="video1" width="420">
+    <source src="lab4_vid.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+    <div class="column">
+        <style>
+            h3 {text-align: center;}
+            </style>
+        <h3 style="font-family:'Times New Roman', Times, serif" > The purpose of this lab is to understand video in multimedia presentations and practice with video editing and conversion with different formats. </h3>
+          </h3>
+        <br> 
+
+        <p class="a"; style="font-family:'Times New Roman', Times, serif">Details of Video</p> 
+        <ul>
+            <li class="c"; style="font-family:'Times New Roman', Times, serif">File Format: MP4</li>
+            <li class="c"; style="font-family:'Times New Roman', Times, serif">Length of Video File: 53 seconds </li>
+            <li class="c"; style="font-family:'Times New Roman', Times, serif">File Size: 7.08 MB (7,429,294 bytes)</li>
+            <li class="c"; style="font-family:'Times New Roman', Times, serif">Frame Width: 1280</li>
+            <li class="c"; style="font-family:'Times New Roman', Times, serif">Frame Height: 720</li>
+            <li class="c"; style="font-family:'Times New Roman', Times, serif">Data Rate: 984 kbps</li>
+            <li class="c"; style="font-family:'Times New Roman', Times, serif">Total BitRate: 1112 kbps</li>
+            <li class="c"; style="font-family:'Times New Roman', Times, serif">Frame Rate: 29.97 frames/second</li>
+            </ul>
+        <p class="a"; style="font-family:'Times New Roman', Times, serif">Explain your work process, including editing on music and video.</p> 
+        <ul>
+          <li class="c"; style="font-family:'Times New Roman', Times, serif">I decided to use Adobe Spark as my editing tool since it is provided by Seneca and is easy to use.</li>
+          <li class="c"; style="font-family:'Times New Roman', Times, serif">I had a bunch of stop motion drawings that I decided to elevate by making a stop motion video.</li>
+          <li class="c"; style="font-family:'Times New Roman', Times, serif">I used a sound/music that was light and easy to hear off of free music samples which last 1 minute.</li>
+          <li class="c"; style="font-family:'Times New Roman', Times, serif">I used elements of fade in and out on text, removed any background noise, and added transitions.</li>
+          </ul>
+        <p class="a"; style="font-family:'Times New Roman', Times, serif">Explain your thoughts on video creation, such as file size and format.</p> 
+        <ul>
+            <li class="c"; style="font-family:'Times New Roman', Times, serif">I believe having file size as small as possible is essential to make sure that it is readily available to users. Larger video files can create an extra load on the website and make things slower for users when trying to access the content.</li>
+            <br>
+            <li class="c"; style="font-family:'Times New Roman', Times, serif">MP4 is a standard, so it is more compatible with a wide range of platforms and players. It is the default for web and social media because it produces smaller file sizes with outstanding quality. </li>
+            </ul>
+      </div>
+  </div>
+  </body> 
+   <!-- Site footer -->
+   <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text" & style="font-family:'Times New Roman', Times, serif">Copyright &copy; 2021 All Rights Reserved by Sahil Patel.
+          </p>
+        </div>
+</footer>
+<footer>
+   <div class="container">
+    <p style="font-family:'Times New Roman', Times, serif">This page was last modified on: 23 February 2021</p>
+</div>
+</footer>
+</html>

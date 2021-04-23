@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <style>
+      a.a {
+        font-size: 25px;
+      }
+      </style> 
+    <div class="navbar-header">
+      <a class="a"; href= "home.html" s="navbar-brand" routerLink="home" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Home</a>
+       &nbsp; &nbsp; &nbsp;
+       <a class="a"; href= "lab2.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 2</a>
+       &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "lab3.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 3</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "lab4.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 4</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "lab5.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 5</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "assignment1.html" s="navbar-brand" routerLink="assignments" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Assignment 1</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "assignment2.html" s="navbar-brand" routerLink="assignments" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Assignment 2</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "assignment3.html" s="navbar-brand" routerLink="assignments" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Assignment 3</a>
+      &nbsp; &nbsp; &nbsp;
+    </div>
+  </div>
+</nav>
+<html lang="en">
+<head>
+  <title>Assignment 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <style>
+      p.a {
+        font-size: 40px;
+      }
+      </style>
+        <style>
+          p.b {
+            font-size: 25px;
+          }
+          </style>
+          <style>
+            li.c {
+              font-size: 20px;
+            }
+            </style>
+            <style>
+              dd.d {
+                font-size: 20px;
+              }
+              </style>
+
+<h1 style="font-family:'Times New Roman', Times, serif">Student Oath</h1>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">I declare that this is wholly my own work in accordance with Seneca Academic Policy. No part of this work has been copied manually or electronically from any other source (including web sites) or distributed to other students.</p>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">Name: Sahil Patel </p>
+  <p class="c"; style="font-family:'Times New Roman', Times, serif">Student ID: 159-065-176</p>
+<h1 style="font-family:'Times New Roman', Times, serif">Video Clip</h1>
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video style="border:1px solid black" id="video1" width="420">
+    <source src="Trip.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+<h1 style="font-family:'Times New Roman', Times, serif">Audio Clip</h1>
+<audio controls> <source src="explaining.mp3" type="audio/mpeg"> </audio>
+<br>
+<h1 style="font-family:'Times New Roman', Times, serif">Transcript</h1>
+<br>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">Hi my name is Sahil Patel and  this video was created on the 24th of Febuary 2021 using the software Adobe Spark.</p>
+<br>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">This video is about a trip I made to NYC back in the summer of 2019. </p>
+<br>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">This first image is the bus ticket that I took to get to NYC from a place called pockipse which is where my cousin lives. </p>
+<br>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">This second image is my first view of nyc that I saw. A crazy underground bus parking system which was probably the size of 3 streets in Toronto.</p>
+<br>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">This third image is of me standing infront of the 9/11 memorial paying homage to the people that lost their life. The building is absolutely massive.</p>
+<br>  
+<p class="c"; style="font-family:'Times New Roman', Times, serif">The fourth image is the oculus which is a new consturcted building. It has the shape of a weird bird.</p>
+<br>
+    <p class="c"; style="font-family:'Times New Roman', Times, serif"> This fifth image is the surprisingly cheap ticket that I bought to enter the empire state building tour. I kept it as a souvenier. </p>
+    <br>
+      <p class="c"; style="font-family:'Times New Roman', Times, serif"> This sixth image is a picture of the view from the empire state building. Fun fact, I almost dropped my phone down the building trying to get this shot and the elevators are surprisingly fast. </p>
+      <br>
+          <p class="c"; style="font-family:'Times New Roman', Times, serif"> This seventh image is something that looked exactly like a building in India it brought back some amazing forgotten memories. </p>
+          <br>
+            <p class="c"; style="font-family:'Times New Roman', Times, serif"> This eighth image is nyc at night, it was very very busy and I actually got scammed by a con artist for his music. Needless to say, it was garbage.</p>
+            <br>
+              <p class="c"; style="font-family:'Times New Roman', Times, serif">  Well, thats some of the 100+ pictures that I captured. Hop you enjoyed thank you. </p>
+              <br>
+
+
+<h1 style="font-family:'Times New Roman', Times, serif">Further Explanation</h1>
+<br>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">In regards to my audio recording, I used audacity to record my voice, remove background noise such as my family and my loud fan, and trim the audio clip to match the video. Additionally, I adjusted the volume of me speaking to ensure it is louder than the background music. I also cut out alot of filler such as stops I made while I was talking which resulted into a more smooth video.</p>
+<br>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">In terms of the background I used a free audio sample that is available on adobe spark for free content use. It matched the uplifting nature of my video as it was about being happy and doing what you want. Therfore, I used this sound. Simple, sweet and effective.</p>
+<br>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">When talking about the image selection, i wanted to do a video on something that i love and enjoy which is traveling. I want to live in NYC when I grow older which is why I chose to do a video about the trip that I made to new york. I used to iamge to ensue my privacy to keep alot of the pictures of me out and more of the scenery as it is more of a sight to see than me. Overall, a fun vacay and I defo recommend to anyone planning to visit.</p>
+<br>
+
+<h1 style="font-family:'Times New Roman', Times, serif">Reflection</h1>
+<br>
+  <p class="c"; style="font-family:'Times New Roman', Times, serif">Step 1: I decided to choose which application that I wanted to use. I decided to use Adobe Spark since it is free with Seneca and I can create from my browser.</p>
+  <br>
+  <p class="c"; style="font-family:'Times New Roman', Times, serif">Step 2: After, I decided on the images that I wanted to choose from my camera roll of 150 pictures. I narrowed it down approx 9 or so. I dragged and dropped them into Adobe Spark. </p>
+  <br>
+  <p class="c"; style="font-family:'Times New Roman', Times, serif">Step 3: I adjusted the length of the still pictures on the screen to ensure that my audio file and video and match if you play at the same time.</p>
+  <br>
+  <p class="c"; style="font-family:'Times New Roman', Times, serif">Step 4: I selected the free music sample and set it to the entire video to ensure we have a light music sample throughout the video.</p>
+  <br>
+  <p class="c"; style="font-family:'Times New Roman', Times, serif">Step 5: I created the title page, the end, and any other slides that dont have pictures.</p>
+  <br>
+  <p class="c"; style="font-family:'Times New Roman', Times, serif">Step 6: I adjusted and cleaned up any remaining tasks I had to made the video. I then reviewed it, downloaded it, and uploaded it to the webpage.</p>
+<br>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">The only issue that I encountered was gathering the images since I had a lot of them located in seperate locations. After that it was choosing which ones that I wanted to show you and display to make a fun and more interactive video instead of videos of me just standing there. Lastly, understanding which tools do what on audacity took me while. I didn't know how to cut specific parts of the video for a good 1 hour or so.</p>
+<br>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">This assignment was a 4 on the difficulty scale. It just took me a while to gather all the materials but added it here and coding was very simple. Overall, not challenging.</p>
+<br>
+
+
+
+
+
+
+
+
+</body>
+
+
+<!-- Site footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text" & style="font-family:'Times New Roman', Times, serif">Copyright &copy; 2021 All Rights Reserved by Sahil Patel.
+        </p>
+      </div>
+</footer>
+<footer>
+ <div class="container">
+  <p style="font-family:'Times New Roman', Times, serif">This page was last modified on: 26 February 2021 </p>
+</div>
+</footer>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <style>
+      a.a {
+        font-size: 25px;
+      }
+      </style> 
+    <div class="navbar-header">
+      <a class="a"; href= "home.html" s="navbar-brand" routerLink="home" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Home</a>
+       &nbsp; &nbsp; &nbsp;
+       <a class="a"; href= "lab2.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 2</a>
+       &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "lab3.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 3</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "lab4.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 4</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "lab5.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 5</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "assignment1.html" s="navbar-brand" routerLink="assignments" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Assignment 1</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "assignment2.html" s="navbar-brand" routerLink="assignments" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Assignment 2</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "assignment3.html" s="navbar-brand" routerLink="assignments" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Assignment 3</a>
+      &nbsp; &nbsp; &nbsp;
+    </div>
+  </div>
+</nav>
+<html lang="en">
+<head>
+  <title>Lab 5</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <style>
+      p.a {
+        font-size: 40px;
+      }
+      </style>
+        <style>
+          p.b {
+            font-size: 25px;
+          }
+          </style>
+          <style>
+            li.c {
+              font-size: 20px;
+            }
+            </style>
+            <style>
+              dd.d {
+                font-size: 20px;
+              }
+              </style>
+                 <style>
+                  p.z {
+                    font-size: 30px;
+                  }
+                                </style> 
+<h1 style="font-family:'Times New Roman', Times, serif">p5.js Image</h1>
+<script src="sketch.js"> </script>
+<script src="p5.js"></script>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1 style="font-family:'Times New Roman', Times, serif">Code</h1>
+<form action="/html/tags/html_form_tag_action.cfm" method="post">
+  <textarea name="comments" id="comments" style="width:50%;height:600px;background-color:black;color:white;border:none;font:10px/30px'Times New Roman', Times, serif;">
+    // for the position on the page 
+    function setup() 
+    {
+      var pos;
+      pos = createCanvas(400, 400);
+      pos.position(300,200);
+    }
+    
+    // for the images to show up 
+      let img;
+      let img2;
+      
+    // loading the images
+    function preload() 
+    {
+      img = loadImage('moon.jpg');
+      img2 = loadImage('star.jpg');
+    }
+    
+    // to draw the pictures and mroe 
+    function draw()
+    {
+      background(0,0,0);
+      
+      // roof
+      stroke(0);
+      fill(90,86,52);
+      triangle(75, 150, 327, 152, 200, 40);
+      
+      // house
+      fill(245, 245, 220);
+      rect(75,150,250,250);
+      
+      // door
+      fill(139,69,19);
+      rect(150,250, 75,150);
+      
+      // door knob
+      fill(0,0,0);
+      noStroke();
+      ellipse(160, 330, 10,10);
+      
+      // moon
+      image(img, 60, 60, 30, 30);
+      
+      // shooting star
+      image(img2, 300, 50, 75, 75);
+    
+       //it colored the street light pole
+      fill(192, 192, 192);
+
+      //it made the pole of street light
+      rect(5,200,10,200);
+      
+      //it colored the street light
+      fill(255,255,255);
+      
+      //it made the steet light
+      rect(5,200,50,5);
+      fill(255,255,0);
+      
+      //it made the light bulb 
+      ellipse(40,210,12);
+      
+      //it made the pole of street light
+      rect(250,200,70,50);
+      
+      // text on the house 
+      textSize(10);
+      fill(0, 0, 0);
+      text('1 Crew Court',250, 225);
+    }
+  </textarea>
+  </form>
+
+
+<h1 style="font-family:'Times New Roman', Times, serif">Reflection</h1>
+<br>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">I decided to go with the most simple method when it came to the design. I've never worked with p5.js before so to ensure 
+I learn how it works and be able to apply the knowledge with formidable evidence I decided to make a simple house. In order to make the image and page more inviting, I gave the shapes that I used
+a colourful outlook by going with a mix of bright and dark colours. Creating the house not only refelcted that I have knowldege on p5.js but also 
+embodied my artistic ability. There were a number of steps that I took in order to complete this task which will be explained below.</p>
+
+<p class="c"; style="font-family:'Times New Roman', Times, serif">I did not have too many steps when doing this lab since it was quite a staightforward coding experience. 
+A lot of the code was 1-2 lines max other than some small elemnts. I started off by choosing the colours that I wanted to use, so I went with the most realistic colours that I 
+could think of by going with: beige, khaki, grey, silver, yellow, brown, and black. Then I read up on the documentation online and provided by Sunny to familiarize myself with the coding practices. 
+First, I decided to set the size of the canvas to a square and set the colour to black to make the house pop out. Then I made the roof by using a triangle and the house by using the rectangle. After, I made the door by using another rectangle and used an ellipse to create both the moon and door knob. 
+I made a block for the text/address on the house using a square. I then decided to create a light post by using a combination of rectangle and ellipse. I also added some basic text to see how it works. I also used 2 images which can closely
+reflect what the image is showing. I used an image for a moon and a shooting star. After, I ran the program to see 
+my creation and then transferred it into the website.</p>
+
+<br>
+
+
+</body>
+
+
+
+
+
+ <!-- Site footer -->
+ <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text" & style="font-family:'Times New Roman', Times, serif">Copyright &copy; 2021 All Rights Reserved by Sahil Patel.
+        </p>
+      </div>
+</footer>
+<footer>
+ <div class="container">
+  <p style="font-family:'Times New Roman', Times, serif">This page was last modified on: March 23 2021</p>
+</script>
+</div>
+</footer>
+</html>

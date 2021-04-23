@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <style>
+      a.a {
+        font-size: 25px;
+      }
+      </style> 
+    <div class="navbar-header">
+      <a class="a"; href= "home.html" s="navbar-brand" routerLink="home" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Home</a>
+       &nbsp; &nbsp; &nbsp;
+       <a class="a"; href= "lab2.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 2</a>
+       &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "lab3.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 3</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "lab4.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 4</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "lab5.html" s="navbar-brand" routerLink="labs" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Lab 5</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "assignment1.html" s="navbar-brand" routerLink="assignments" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Assignment 1</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "assignment2.html" s="navbar-brand" routerLink="assignments" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Assignment 2</a>
+      &nbsp; &nbsp; &nbsp;
+      <a class="a"; href= "assignment3.html" s="navbar-brand" routerLink="assignments" routerLinkActive="active" style="font-family:'Times New Roman', Times, serif">Assignment 3</a>
+      &nbsp; &nbsp; &nbsp;
+    </div>
+  </div>
+</nav>
+<html lang="en">
+<head>
+  <title>Assignment 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <style>
+      p.a {
+        font-size: 40px;
+      }
+      </style>
+        <style>
+          p.b {
+            font-size: 25px;
+          }
+          </style>
+          <style>
+            li.c {
+              font-size: 20px;
+            }
+            </style>
+            <style>
+              dd.d {
+                font-size: 20px;
+              }
+              </style>
+                 <style>
+                  p.z {
+                    font-size: 30px;
+                  }
+                  </style>
+
+  <h1 style="font-family:'Times New Roman', Times, serif">Airplane</h1>
+  <script src="sketch2.js"> </script>
+<script src="p5.js"></script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1 style="font-family:'Times New Roman', Times, serif">Airplane Code</h1>
+<form action="/html/tags/html_form_tag_action.cfm" method="post">
+  <textarea name="comments" id="comments" style="width:20%;height:600px;background-color:black;color:white;border:none;font:10px/30px'Times New Roman', Times, serif;">
+    //variables for each image
+    let sky
+    let airplane
+    
+    // for the position on the page 
+    function setup() 
+    {
+      // variable for position 
+      var pos;
+    
+      // setting the canvas size to the variable
+      pos = createCanvas(600, 400);
+    
+      // setting the position of the canvas onto the html page
+      pos.position(300,200);
+    }
+    
+    // loading both the images 
+    function preload()
+    {
+        sky = loadImage ('cloud.jpeg');
+        airplane = loadImage ('plane.png');
+    }
+    
+    // drawing the elements 
+      function draw() {
+       
+        // setting the first image (sky) as the background
+        background (sky,400,400); 
+        
+        // the text in the top left and updating it each time the mouse cursor moves 
+        text(mouseX + "," + mouseY, 20, 20);
+        
+        // airplane image moving. Only the x axis is able to move from left to right
+        image(airplane,mouseX,110,150,150);
+    }
+  </textarea>
+  </form>
+
+ 
+
+  <h1 style="font-family:'Times New Roman', Times, serif">Reflection</h1>
+<br>
+<p class="c"; style="font-family:'Times New Roman', Times, serif"> 
+I decided to animate an airplane moving because this because it actually seemed really cool to move a particular image based off of my cursor. It seemed challenging and I was up for it. Also, in my personal life due to covid
+I have not been able to travel at all so I just wanted to animate something that I haven't done for over a year now. First, I decided what I wanted to animate which is explained in the previous sentences. Then second, I found the images
+off google. But I encountered a little challenge of finding a transparent image of an airplane. I took a picture that I liked and convereted it into a transparent png. I declared both the sky and airplane variables in my sketch2.js file.
+After, I set up the postion of the image on the HTML page from inside of the js file. I declared the pos variable and then create the canvas while setting it to the pos which will let us position it anywhere we want. Then using pos.postion 
+I chose where it would look best on the HTML page. I decided it would look good at the top center, signifiying its importance. Then, I preloaded the images into the variables that i declared. Setting the sky variable to the cloud image and then 
+the airplane variable to the transparent plane image. I then drew the elements of the screen, setting the background to be the sky and defining its size. After I had the text for the coordinates at the top left of the screen which will dipplay the coordinates 
+of the cursor on the screen. Lastly, I set the airplane image onto the sky and set it as the airplane only being moved on the xaxis (left to right) to make it realistic. I also set the position of it on the screen and then moved it around and it worked as expected.  </p>
+<br>
+
+<h1 style="font-family:'Times New Roman', Times, serif">Student Oath</h1>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">I declare that this is wholly my own work in accordance with Seneca Academic Policy. No part of this work has been copied manually or electronically from any other source (including web sites) or distributed to other students.</p>
+<p class="c"; style="font-family:'Times New Roman', Times, serif">Name: Sahil Patel </p>
+  <p class="c"; style="font-family:'Times New Roman', Times, serif">Student ID: 159-065-176</p>
+
+
+
+
+
+</body>
+
+
+
+ <!-- Site footer -->
+ <footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text" & style="font-family:'Times New Roman', Times, serif">Copyright &copy; 2021 All Rights Reserved by Sahil Patel.
+        </p>
+      </div>
+</footer>
+<footer>
+ <div class="container">
+  <p style="font-family:'Times New Roman', Times, serif">This page was last modified on: March 30 2021</p>
+</script>
+</div>
+</footer>
+</html>
